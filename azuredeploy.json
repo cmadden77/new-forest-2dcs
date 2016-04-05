@@ -115,16 +115,16 @@
     "ADDC1VMName": {
       "type": "string",
       "metadata": {
-        "description": "The computer name of the PDC"
+        "description": "The computer name of the ADDC1"
       },
-      "defaultValue": "ax-us4-dc-01"
+      "defaultValue": "ax-dc-us4-01"
     },
     "ADDC2VMName": {
       "type": "string",
       "metadata": {
-        "description": "The computer name of the BDC"
+        "description": "The computer name of the ADDC2"
       },
-      "defaultValue": "ax-us4-dc-01"
+      "defaultValue": "ax-dc-us4-02"
     },
     "adminUsername": {
       "type": "string",
@@ -226,13 +226,6 @@
       },
       "defaultValue": "https://raw.githubusercontent.com/cmadden77/new-forest-2dcs/master/"
     },
-    "assetLocation_1": {
-      "type": "string",
-      "metadata": {
-        "description": "The location of resources such as templates and DSC modules that the script is dependent"
-      },
-      "defaultValue": "https://github.com/cmadden77/new-forest-2dcs/raw/master/"
-    }
   },
   "variables": {
     "adLBFE": "LBFE",
@@ -257,9 +250,9 @@
     "vnetTemplateUri": "[concat(parameters('assetLocation'),'vnet.json')]",
     "nicTemplateUri": "[concat(parameters('assetLocation'),'nic.json')]",
     "vnetwithDNSTemplateUri": "[concat(parameters('assetLocation'),'vnet-with-dns-server.json')]",
-    "ADDC1ModulesURL": "[concat(parameters('assetLocation_1'),'CreateADDC1.ps1.zip')]",
+    "ADDC1ModulesURL": "[concat(parameters('assetLocation'),'CreateADDC1.ps1.zip')]",
     "ADDC1ConfigurationFunction": "CreateADDC1.ps1\\CreateADDC1",
-    "ADDC2ModulesURL": "[concat(parameters('assetLocation_1'),'CreateADDC2.ps1.zip')]",
+    "ADDC2ModulesURL": "[concat(parameters('assetLocation'),'CreateADDC2.ps1.zip')]",
     "ADDC2ConfigurationFunction": "CreateADDC2.ps1\\CreateADDC2"
   },
   "resources": [
