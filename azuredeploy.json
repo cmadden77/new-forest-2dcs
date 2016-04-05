@@ -225,6 +225,13 @@
         "description": "The location of resources such as templates and DSC modules that the script is dependent"
       },
       "defaultValue": "https://raw.githubusercontent.com/cmadden77/new-forest-2dcs/master/"
+    },
+    "assetLocation_1": {
+      "type": "string",
+      "metadata": {
+        "description": "The location of resources such as templates and DSC modules that the script is dependent"
+      },
+      "defaultValue": "https://github.com/cmadden77/new-forest-2dcs/blob/master/"
     }
   },
   "variables": {
@@ -250,9 +257,9 @@
     "vnetTemplateUri": "[concat(parameters('assetLocation'),'vnet.json')]",
     "nicTemplateUri": "[concat(parameters('assetLocation'),'nic.json')]",
     "vnetwithDNSTemplateUri": "[concat(parameters('assetLocation'),'vnet-with-dns-server.json')]",
-    "addc1ModulesURL": "[concat(parameters('assetLocation'),'Createaddc1.ps1.zip')]",
+    "addc1ModulesURL": "[concat(parameters('assetLocation_1'),'Createaddc1.ps1.zip')]",
     "addc1ConfigurationFunction": "Createaddc1.ps1\\Createaddc1",
-    "addc2ModulesURL": "[concat(parameters('assetLocation'),'Createaddc2.ps1.zip')]",
+    "addc2ModulesURL": "[concat(parameters('assetLocation_1'),'Createaddc2.ps1.zip')]",
     "addc2ConfigurationFunction": "Createaddc2.ps1\\Createaddc2"
   },
   "resources": [
