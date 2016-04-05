@@ -1,5 +1,5 @@
 ﻿{
-  "itemDisplayName": "Create an new AD Domain with 2 Domain Controllers",
+  "itemDisplayName": "Azure Modified Create an new AD Domain with 2 Domain Controllers",
   "description": "This template creates 2 new VMs to be AD DCs for a new Forest and Domain",
   "summary": "This template creates 2 Azure VMs with AD",
   "githubUsername": "cmadden77",
