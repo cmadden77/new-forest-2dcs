@@ -231,7 +231,7 @@
       "metadata": {
         "description": "The location of resources such as templates and DSC modules that the script is dependent"
       },
-      "defaultValue": "https://github.com/cmadden77/new-forest-2dcs/blob/master/"
+      "defaultValue": "https://github.com/cmadden77/new-forest-2dcs/raw/master/"
     }
   },
   "variables": {
@@ -253,7 +253,7 @@
     "adBEAddressPoolID": "[concat(variables('adlbID'),'/backendAddressPools/',variables('adLBBE'))]",
     "addc1DataDisk": "addc1DataDisk",
     "addc2DataDisk": "addc2DataDisk",
-    "adDataDiskSize": 200,
+    "adDataDiskSize": 20,
     "vnetTemplateUri": "[concat(parameters('assetLocation'),'vnet.json')]",
     "nicTemplateUri": "[concat(parameters('assetLocation'),'nic.json')]",
     "vnetwithDNSTemplateUri": "[concat(parameters('assetLocation'),'vnet-with-dns-server.json')]",
