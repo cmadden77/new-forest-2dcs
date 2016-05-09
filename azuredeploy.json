@@ -117,14 +117,12 @@
       "metadata": {
         "description": "The computer name of the ADDC1"
       },
-      "defaultValue": "ax-dc-us4-01"
     },
     "ADDC2VMName": {
       "type": "string",
       "metadata": {
         "description": "The computer name of the ADDC2"
       },
-      "defaultValue": "ax-dc-us4-02"
     },
     "adminUsername": {
       "type": "string",
